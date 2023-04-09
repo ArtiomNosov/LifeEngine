@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="2_LifeBytes.cs" />
+    <Compile Remove="3_LongLife.cs" />
+    <Compile Remove="4_LifeIsLookingUp.cs" />
+    <Compile Remove="5_LifeInBits.cs" />
+    <Compile Remove="6_LifeIsABitMagic.cs" />
+    <Compile Remove="7_AdvancedLifeExtensions.cs" />
+    <Compile Remove="7_AdvancedLifeExtensionsInLine.cs" />
+    <Compile Remove="7_AdvancedLifeExtensionsInLineCompressed.cs" />
+    <Compile Remove="LifeInLine_Bytes.cs" />
+    <Compile Remove="LifeInLine_Long.cs" />
+    <Compile Remove="LifeInLine_LongCompressed.cs" />
+    <Compile Remove="LifeInList.cs" />
+    <Compile Remove="LifeIsChange.cs" />
+  </ItemGroup>
+
+</Project>
